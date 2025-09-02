@@ -16,7 +16,7 @@ The code implements the following functionalities.
 - Simple examples for changing styles.
 
 Obviously, the current code is deliberately changed into a crude state, to prevent you from using it as your base code.   
-For further funcionality implementations, you need to change the design and implementation a lot to make the code in better shape.  
+For further funcionality implementations, you need to change the design and implementation significantly to make the code in better shape.  
 
 --------------
 
