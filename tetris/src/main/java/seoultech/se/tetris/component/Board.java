@@ -40,6 +40,7 @@ public class Board extends JFrame {
 	private SimpleAttributeSet styleSet;
 	private Timer timer;
 	private Block curr;
+	private Random rnd;
 	int x = 3; //Default Position.
 	int y = 0;
 	
@@ -48,6 +49,9 @@ public class Board extends JFrame {
 	public Board() {
 		super("SeoulTech SE Tetris");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		//Initialize random number generator.
+		rnd = new Random(System.currentTimeMillis());
 		
 		//Board display setting.
 		pane = new JTextPane();
@@ -90,8 +94,7 @@ public class Board extends JFrame {
 		timer.start();
 	}
 
-	private Block getRandomBlock() {
-		Random rnd = new Random(System.currentTimeMillis());
+	public Block getRandomBlock() {
 		int block = rnd.nextInt(6);
 		switch(block) {
 		case 0:
@@ -221,5 +224,4 @@ public class Board extends JFrame {
 			
 		}
 	}
-	
 }
